@@ -1,0 +1,33 @@
+﻿@model IEnumerable<Back.Models.ModeloEvaluativo>
+@{
+    ViewData["Title"] = "Modelos Evaluativos";
+}
+
+<h1>Modelos Evaluativos</h1>
+
+<a asp-action="Create" asp-controller="ModeloEvaluativo" class="btn btn-primary">Agregar Modelo</a>
+
+<table class="table mt-3">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Descripción</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var modelo in Model)
+        {
+            <tr>
+                <td>@modelo.Nombre</td>
+                <td>@modelo.Descripcion</td>
+                <td>
+                    <a asp-action="Edit" asp-controller="ModeloEvaluativo" asp-route-id="@modelo.Id" class="btn btn-sm btn-warning">Editar</a>
+                    <form asp-action="Delete" asp-controller="ModeloEvaluativo" asp-route-id="@modelo.Id" method="post" style="display:inline-block;">
+                        <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('¿Está seguro que desea eliminar este modelo?')">Eliminar</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

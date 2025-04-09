@@ -1,0 +1,19 @@
+﻿@page
+@model Back.Views.Home.IndexModel
+@{
+    ViewData["Title"] = "Inicio";
+}
+
+<h1>Bienvenido</h1>
+
+<p class="lead">Seleccione una opción:</p>
+
+<div class="mt-4">
+    <a asp-controller="ModeloEvaluativo" asp-action="Index" class="btn btn-outline-primary btn-lg mb-2">
+        Ver Modelos Evaluativos
+    </a>
+    <br />
+    <a asp-controller="ModeloEvaluativo" asp-action="Create" class="btn btn-outline-success btn-lg">
+        Agregar Modelo Evaluativo
+    </a>
+</div>

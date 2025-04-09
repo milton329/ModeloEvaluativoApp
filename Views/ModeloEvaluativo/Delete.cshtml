@@ -1,0 +1,18 @@
+﻿@page
+@model Back.Views.ModeloEvaluativo.DeleteModel
+@{
+    ViewData["Title"] = "Eliminar Modelo Evaluativo";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<h3>¿Está seguro que desea eliminar este modelo?</h3>
+
+<div>
+    <h4>@Model.Nombre</h4>
+    <form asp-action="DeleteConfirmed">
+        <input type="hidden" asp-for="Id" />
+        <button type="submit" class="btn btn-danger">Eliminar</button>
+        <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+    </form>
+</div>
