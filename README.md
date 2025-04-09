@@ -1,11 +1,11 @@
 # 🎓 Modelo Evaluativo
 
-Este es un sistema web desarrollado en **ASP.NET Core** que permite la gestión de **modelos evaluativos** dentro de una institución educativa. Incluye funcionalidades CRUD (Crear, Leer, Actualizar y Eliminar) para administrar diferentes modelos evaluativos utilizados en procesos académicos.
+Este es un sistema web desarrollado en **ASP.NET Core** que permite la gestión de **modelos evaluativos** Incluye funcionalidades CRUD (Crear, Leer, Actualizar y Eliminar) para administrar diferentes modelos evaluativos utilizados en procesos académicos.
 
 ## 🚀 Tecnologías utilizadas
 
 - ASP.NET Core 8 (MVC + Razor Pages)
-- Entity Framework Core
+- Entity Framework Core 
 - MySQL
 - Bootstrap (para estilos)
 - Swagger (para documentación de API REST)
